@@ -24,5 +24,38 @@ public class IndexController {
         return "pages/category/list";
     }
 
+    @GetMapping("archive")
+    public String archive(){
+        return "pages/archive/list";
+    }
+
+    @GetMapping("label")
+    public String label(){
+        return "pages/label/list";
+    }
+
+
+
+    @GetMapping("link")
+    public String link(){
+        return "pages/link/list";
+    }
+
+
+    @GetMapping("about")
+    public String about(){
+        return "pages/about/list";
+    }
+
+
+    @GetMapping("article/detail")
+    public String article(){
+        return "pages/article/list";
+    }
+
+    @GetMapping("login")
+    public String login(){
+        return "pages/login";
+    }
 
 }

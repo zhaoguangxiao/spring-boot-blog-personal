@@ -1,0 +1,314 @@
+
+<!DOCTYPE HTML>
+<html class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <title>[更新] 修复 archive.php 页面分页问题 - BootstrapBlog 主题</title>
+
+    <!-- 使用url函数转换相关路径 -->
+    <!-- 判断是否使用 CDN 加载基础资源-->
+    <!-- 使用 CDN-->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/prism.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.goup.min.js"></script>
+    <script src="../js/prism.js"></script>
+    <script src="../js/app.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- 通过自有函数输出HTML头部信息 -->
+    <meta name="description" content="github：基于 bootstrap 4 开发的 typecho 响应式两栏博客主题更新时间2018-07-19更新内容：修复 archive.php 模板页面的分页显示问题。涉及的博客页面包..." />
+    <meta name="keywords" content="typecho,php,分页,pagination" />
+    <meta name="generator" content="Typecho 1.1/17.10.30" />
+    <meta name="template" content="postbird" />
+    <link rel="pingback" href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/action/xmlrpc" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/action/xmlrpc?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/action/xmlrpc?wlw" />
+    <!-- 用户自定义 stylesheet -->
+    <style>
+    </style>
+</head>
+<body>
+<!--[if lt IE 8]>
+<div class="browsehappy" role="dialog">当前网页 <strong>不支持</strong> 你正在使用的浏览器. 为了正常的访问, 请 <a
+        href="http://browsehappy.com/">升级你的浏览器</a>.
+</div>
+<![endif]-->
+
+<header id="header" class="clearfix">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md">
+        <div class="container">
+            <a class="navbar-brand" href="/"
+               title="基于Bootstrap4的响应式typecho博客主题">BootstrapBlog 主题</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/">首页 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="category"
+                           title="文章分类"><span>文章分类</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="archive"
+                           title="文章归档"><span>文章归档</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="label"
+                           title="标签"><span>标签</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="link"
+                           title="友链"><span>友链</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about"
+                           title="关于"><span>关于</span></a>
+                    </li>
+                </ul>
+                <div class="navbar-text">
+                    <form method="post" action="" class="search-form form-inline">
+                        <div class="form-group">
+                            <input type="search" name="s" class="form-control form-control-sm"/>
+                            <button class="btn btn-info btn-sm">搜索</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+</header><!-- end #header -->
+<div id="body">
+    <div class="container main-wrapper">
+        <div class="row">
+
+
+
+
+            <div class="col-md-8" id="post-item" role="main">
+                <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+                    <h1 class="post-title" itemprop="name headline"><a itemprop="url" href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/archives/42/">[更新] 修复 archive.php 页面分页问题</a></h1>
+                    <ul class="post-meta">
+                        <li itemprop="author" itemscope itemtype="http://schema.org/Person">作者: <a itemprop="name" href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/author/1/" rel="author">admin</a></li>
+                        <li>时间: <time datetime="2018-07-19T00:36:00+08:00" itemprop="datePublished">2018-07-19</time></li>
+                        <li>分类: <a href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/category/php/">PHP</a></li>
+                    </ul>
+                    <div class="post-content markdown-body" itemprop="articleBody">
+                        <h2>github：</h2><ul><li><a href="https://github.com/postbird/typecho-bootstrap-blog">基于 bootstrap 4 开发的 typecho 响应式两栏博客主题</a></li></ul><h2>更新时间</h2><ul><li>2018-07-19</li></ul><h2>更新内容：</h2><p>修复 <code>archive.php</code> 模板页面的分页显示问题。</p><p>涉及的博客页面包括 <code>搜索结果页面</code>、<code>分类下文章页面</code> 等。</p><h2>效果：</h2><h3>修复前：</h3><p><img src="http://theme.typecho.ptbird.cn/bootstrap-blog/usr/uploads/2018/07/1982966592.jpg" alt="de.jpg" title="de.jpg"></p><h3>修复后：</h3><p><img src="http://theme.typecho.ptbird.cn/bootstrap-blog/usr/uploads/2018/07/880983565.jpg" alt="2.jpg" title="2.jpg"></p>        </div>
+                    <div class="post-keywords">
+                        <div itemprop="keywords" class="tags">标签： <a href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/tag/typecho/">typecho</a> <a href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/tag/php/">php</a> <a href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/tag/%E5%88%86%E9%A1%B5/">分页</a> <a href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/tag/pagination/">pagination</a></div>
+                    </div>
+                    <div class="post-well" style="background-color:#f6f6f6;padding:10px;margin-bottom: 10px;white-space: nowrap;">
+                        <p>文章版权：<a style="color:#15A7F0;" href="http://theme.typecho.ptbird.cn/bootstrap-blog/">BootstrapBlog 主题 - 基于Bootstrap4的响应式typecho博客主题 </a></p>
+                        <p>本文链接：<a  style="color:#15A7F0;"href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/archives/42/">http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/archives/42/</a></p>
+                        <p>转载请注明文章原始出处 !</p>
+                    </div>
+                </article>
+                <ul class="post-near">
+                    <li>上一篇: <a href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/archives/38/" title="[更新] 修复 post 页面版权显示问题">[更新] 修复 post 页面版权显示问题</a></li>
+                    <li>下一篇: <a href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/archives/43/" title="【声明】本主题不再维护，联系方式见文章内">【声明】本主题不再维护，联系方式见文章内</a></li>
+                </ul>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="comments" class=" comments-wrapper">
+                            <p>已有 6 条评论</p>
+                            <ol class="comment-list">    <li id="li-comment-97" class="comment-body comment-parent comment-odd">
+                                <div id="comment-97" class="comment-item">
+                                    <div class="comment-author">
+                                        <img class="avatar" src="http://www.gravatar.com/avatar/303f132ea83a949a75b9ce224e821732?s=40&amp;r=G&amp;d=" alt="看k'm" width="40" height="40" />                <span class="fn">
+            看k'm                    </span>
+                                    </div>
+                                    <div class="comment-meta">
+                                        <a href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/archives/42/comment-page-1#comment-97">2019-06-18 11:19</a>
+                                    </div>
+                                    <span class="comment-reply"><a href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/archives/42/comment-page-1?replyTo=97#respond-post-42" rel="nofollow" onclick="return TypechoComment.reply('comment-97', 97);">回复</a></span>
+                                    <div class="comment-content">
+                                        <p>古巴好吧</p>            </div>
+                                </div>
+                                <div class="comment-children">
+                                    <ol class="comment-list">    <li id="li-comment-98" class="comment-body comment-child comment-level-odd comment-odd">
+                                        <div id="comment-98" class="comment-item">
+                                            <div class="comment-author">
+                                                <img class="avatar" src="http://www.gravatar.com/avatar/43864d61e3448389f36cdbd0c0d4fab1?s=40&amp;r=G&amp;d=" alt="dddddddddddd" width="40" height="40" />                <span class="fn">
+            dddddddddddd                    </span>
+                                            </div>
+                                            <div class="comment-meta">
+                                                <a href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/archives/42/comment-page-1#comment-98">2019-06-22 11:46</a>
+                                            </div>
+                                            <span class="comment-reply"><a href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/archives/42/comment-page-1?replyTo=98#respond-post-42" rel="nofollow" onclick="return TypechoComment.reply('comment-98', 98);">回复</a></span>
+                                            <div class="comment-content">
+                                                <p>东想西想寻寻寻寻寻寻寻寻寻寻寻寻寻寻寻寻寻寻</p>            </div>
+                                        </div>
+                                    </li>
+                                    </ol>            </div>
+                            </li>
+                                <li id="li-comment-95" class="comment-body comment-parent comment-even">
+                                    <div id="comment-95" class="comment-item">
+                                        <div class="comment-author">
+                                            <img class="avatar" src="http://www.gravatar.com/avatar/131c4203c2b110a6975daa837dcf010a?s=40&amp;r=G&amp;d=" alt="f'd's'd'f" width="40" height="40" />                <span class="fn">
+            <a href="http://www.baidu.com" rel="external nofollow">f'd's'd'f</a>                    </span>
+                                        </div>
+                                        <div class="comment-meta">
+                                            <a href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/archives/42/comment-page-1#comment-95">2019-04-08 16:12</a>
+                                        </div>
+                                        <span class="comment-reply"><a href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/archives/42/comment-page-1?replyTo=95#respond-post-42" rel="nofollow" onclick="return TypechoComment.reply('comment-95', 95);">回复</a></span>
+                                        <div class="comment-content">
+                                            <p>&lt;script type=&quot;application/javascript&quot;&gt;alert('入侵成功')&lt;/script&gt;</p>            </div>
+                                    </div>
+                                </li>
+                                <li id="li-comment-94" class="comment-body comment-parent comment-odd">
+                                    <div id="comment-94" class="comment-item">
+                                        <div class="comment-author">
+                                            <img class="avatar" src="http://www.gravatar.com/avatar/131c4203c2b110a6975daa837dcf010a?s=40&amp;r=G&amp;d=" alt="f'd's'd'f" width="40" height="40" />                <span class="fn">
+            <a href="http://www.baidu.com" rel="external nofollow">f'd's'd'f</a>                    </span>
+                                        </div>
+                                        <div class="comment-meta">
+                                            <a href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/archives/42/comment-page-1#comment-94">2019-04-08 16:11</a>
+                                        </div>
+                                        <span class="comment-reply"><a href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/archives/42/comment-page-1?replyTo=94#respond-post-42" rel="nofollow" onclick="return TypechoComment.reply('comment-94', 94);">回复</a></span>
+                                        <div class="comment-content">
+                                            <p>&lt;script&gt;alert('入侵成功')&lt;/script&gt;</p>            </div>
+                                    </div>
+                                </li>
+                                <li id="li-comment-93" class="comment-body comment-parent comment-even">
+                                    <div id="comment-93" class="comment-item">
+                                        <div class="comment-author">
+                                            <img class="avatar" src="http://www.gravatar.com/avatar/131c4203c2b110a6975daa837dcf010a?s=40&amp;r=G&amp;d=" alt="f'd's'd'f" width="40" height="40" />                <span class="fn">
+            <a href="http://www.baidu.com" rel="external nofollow">f'd's'd'f</a>                    </span>
+                                        </div>
+                                        <div class="comment-meta">
+                                            <a href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/archives/42/comment-page-1#comment-93">2019-04-08 16:10</a>
+                                        </div>
+                                        <span class="comment-reply"><a href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/archives/42/comment-page-1?replyTo=93#respond-post-42" rel="nofollow" onclick="return TypechoComment.reply('comment-93', 93);">回复</a></span>
+                                        <div class="comment-content">
+                                            <p>反对士大夫士大夫士大夫士大夫士大夫撒旦</p>            </div>
+                                    </div>
+                                </li>
+                                <li id="li-comment-92" class="comment-body comment-parent comment-odd">
+                                    <div id="comment-92" class="comment-item">
+                                        <div class="comment-author">
+                                            <img class="avatar" src="http://www.gravatar.com/avatar/d219af79b45e5891507fda4c4c2139a0?s=40&amp;r=G&amp;d=" alt="1" width="40" height="40" />                <span class="fn">
+            <a href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/archives/42/" rel="external nofollow">1</a>                    </span>
+                                        </div>
+                                        <div class="comment-meta">
+                                            <a href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/archives/42/comment-page-1#comment-92">2019-02-26 18:47</a>
+                                        </div>
+                                        <span class="comment-reply"><a href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/archives/42/comment-page-1?replyTo=92#respond-post-42" rel="nofollow" onclick="return TypechoComment.reply('comment-92', 92);">回复</a></span>
+                                        <div class="comment-content">
+                                            <p>1</p>            </div>
+                                    </div>
+                                </li>
+                            </ol>                <nav  aria-label="Page navigation text-center">
+                        </nav>
+
+                            <div id="respond-post-42" class="respond">
+                                <div class="cancel-comment-reply">
+                                    <a id="cancel-comment-reply-link" href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/archives/42/#respond-post-42" rel="nofollow" style="display:none" onclick="return TypechoComment.cancelReply();">取消回复</a>                    </div>
+                                <div class="add-comments">
+                                    <h4 id="response">添加新评论</h4>
+                                    <form method="post" action="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/archives/42/comment" id="comment-form" role="form" class="form">
+                                        <div class="form-group">
+                                            <label for="author" class="required">称呼</label>
+                                            <input type="text" name="author" id="author" class="text form-control" value="" required />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="mail" class="required">Email</label>
+                                            <input type="email" name="mail" id="mail" class="text form-control" value="" required />
+                                        </div>
+                                        <div  class="form-group">
+                                            <label for="url">网站</label>
+                                            <input type="url" name="url" id="url" class="text form-control" placeholder="http://" value="" />
+                                        </div>
+                                        <p>
+                                            <label for="textarea" class="required">内容</label>
+                                            <textarea rows="8" cols="50" name="text" id="textarea" class="textarea form-control" required ></textarea>
+                                        </p>
+                                        <p>
+                                            <button type="submit" class="submit btn btn-info ">提交评论</button>
+                                        </p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div><!-- end #main-->
+
+            <div class="col-md-4 kit-hidden-tb" id="secondary" role="complementary">
+
+
+                <!-- 边栏显示最近文章，默认注释掉 -->
+
+
+                <!-- 边栏显示最近回复，默认开启 -->
+                <section class="widget">
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-info"><span>最近回复</span></li>
+                        <li class="list-group-item comment-item"><a href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/archives/42/comment-page-1#comment-98">dddddddddddd</a>： 东想西想寻寻寻寻寻寻寻寻寻寻寻寻寻寻寻寻寻寻</li>
+                        <li class="list-group-item comment-item"><a href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/archives/42/comment-page-1#comment-97">看k'm</a>： 古巴好吧</li>
+                        <li class="list-group-item comment-item"><a href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/archives/38/comment-page-1#comment-96">seerking</a>： 谢谢作者</li>
+                    </ul>
+                </section>
+
+
+                <!-- 边栏显示文章分类 默认开启-->
+
+                <!-- 边栏显示归档，默认注释掉 -->
+
+
+                <!--    边栏显示其他操作，默认开启-->
+                <section class="widget">
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-info"><span>其他</span></li>
+                        <li class="list-group-item"><a href="http://theme.typecho.ptbird.cn/bootstrap-blog/admin/login.php">登录</a></li>
+                        <li class="list-group-item"><a href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/feed/">文章 RSS</a></li>
+                        <li class="list-group-item"><a href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/feed/comments/">评论 RSS</a></li>
+                    </ul>
+                </section>
+
+
+                <!-- 边栏显示友情链接，默认注释掉 -->
+                <!--    <section class="widget">-->
+                <!--        <ul class="list-group">-->
+                <!--            <li class="list-group-item list-group-item-info"><span>--><!--</span></li>-->
+                <!--            <li class="list-group-item"><a target="_blank" href="" title="">友情链接名称</a></li>-->
+                <!--        </ul>-->
+                <!--    </section>-->
+
+            </div><!-- end #sidebar -->
+            <a class="to-top" style="z-index: 1200;">
+                <img src="http://theme.typecho.ptbird.cn/bootstrap-blog/usr/themes/postbird/img/top.svg" alt="返回顶部" title="返回顶部">
+            </a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <footer id="footer" role="contentinfo">
+                            &copy; 2019 <a href="http://theme.typecho.ptbird.cn/bootstrap-blog/">BootstrapBlog 主题</a>.
+                            <a target="_blank" href="//www.miitbeian.gov.cn">鲁ICP备16034533号-1</a> .
+                            由 <a href="http://www.typecho.org"  target="_blank">Typecho</a> 强力驱动.
+                            Theme by  <a href="http://www.ptbird.cn" target="_blank">Postbird</a>.
+                        </footer><!-- end #footer -->
+                    </div>
+                </div>
+            </div>
+
+</body>
+<!-- 用户自定义脚本内容 -->
+</html>
