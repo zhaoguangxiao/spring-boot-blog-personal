@@ -1,0 +1,475 @@
+<!DOCTYPE HTML>
+<html class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <title>BootstrapBlog 主题</title>
+
+    <!-- 使用url函数转换相关路径 -->
+    <!-- 判断是否使用 CDN 加载基础资源-->
+    <!-- 使用 CDN-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/prism.css">
+
+    <!--[if lt IE 9]>
+    <script src="js/html5.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- 通过自有函数输出HTML头部信息 -->
+    <meta name="description" content="基于Bootstrap4的响应式typecho博客主题"/>
+    <meta name="keywords" content="typecho主题,typecho,php,blog"/>
+    <meta name="generator" content="Typecho 1.1/17.10.30"/>
+    <meta name="template" content="postbird"/>
+    <link rel="pingback" href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/action/xmlrpc"/>
+    <link rel="EditURI" type="application/rsd+xml" title="RSD"
+          href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/action/xmlrpc?rsd"/>
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml"
+          href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/action/xmlrpc?wlw"/>
+    <link rel="alternate" type="application/rss+xml" title="BootstrapBlog 主题 &raquo; RSS 2.0"
+          href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/feed/"/>
+    <link rel="alternate" type="application/rdf+xml" title="BootstrapBlog 主题 &raquo; RSS 1.0"
+          href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/feed/rss/"/>
+    <link rel="alternate" type="application/atom+xml" title="BootstrapBlog 主题 &raquo; ATOM 1.0"
+          href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/feed/atom/"/>
+
+    <!-- 用户自定义 stylesheet -->
+    <style>
+    </style>
+</head>
+<body>
+<!--[if lt IE 8]>
+<div class="browsehappy" role="dialog">当前网页 <strong>不支持</strong> 你正在使用的浏览器. 为了正常的访问, 请 <a
+        href="http://browsehappy.com/">升级你的浏览器</a>.
+</div>
+<![endif]-->
+
+<header id="header" class="clearfix">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md">
+        <div class="container">
+            <a class="navbar-brand" href="#"
+               title="基于Bootstrap4的响应式typecho博客主题">BootstrapBlog 主题</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">首页 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="category"
+                           title="文章分类"><span>文章分类</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"
+                           title="文章归档"><span>文章归档</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"
+                           title="标签"><span>标签</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"
+                           title="友链"><span>友链</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"
+                           title="关于"><span>关于</span></a>
+                    </li>
+                </ul>
+                <div class="navbar-text">
+                    <form method="post" action="" class="search-form form-inline">
+                        <div class="form-group">
+                            <input type="search" name="s" class="form-control form-control-sm"/>
+                            <button class="btn btn-info btn-sm">搜索</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+</header><!-- end #header -->
+<div id="body">
+    <div class="container main-wrapper">
+        <div class="row">
+            <div class="col-md-8 col-xs-12 " id="main" role="main">
+                <article class="post-wrapper" itemscope itemtype="http://schema.org/BlogPosting">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3><a class="title-link" itemprop="url" title="【声明】本主题不再维护，联系方式见文章内"
+                                   href="#"><span
+                                    style='color:red'>[置顶] </span>【声明】本主题不再维护，联系方式见文章内</a></h3>
+                        </div>
+                        <div class="col-md-4 ">
+                            <div class="no-thumb-image">
+                                <span>暂无缩略图</span>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+
+                            <!--                   <hr>-->
+                            <div class="post-content" itemprop="articleBody">
+                                声明因为时间问题，本主题已经不再维护和升级，有问题请到 http://contact.ptbird.cn 联系我。谢谢。
+                            </div>
+                        </div>
+                        <div class="col-md-12 post-meta">
+                            <ul class="">
+                                <li>时间：
+                                    <time datetime="2018-12-03T23:35:00+08:00" itemprop="datePublished">2018-12-03
+                                    </time>
+                                </li>
+                                <li itemprop="author" itemscope itemtype="http://schema.org/Person">作者： <a
+                                        itemprop="name"
+                                        href="#"
+                                        rel="author">admin</a></li>
+                                <li>分类： <a
+                                        href="#">默认分类</a>
+                                </li>
+                                <li itemprop="interactionCount"><a itemprop="discussionUrl"
+                                                                   href="#">0
+                                    条评论</a></li>
+                                <li class="float-right">
+                                    <a href="#"
+                                       class="float-right">阅读全文</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+
+                </article>
+                <article class="post-wrapper" itemscope itemtype="http://schema.org/BlogPosting">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3><a class="title-link" itemprop="url" title="[更新] 修复 archive.php 页面分页问题"
+                                   href="#">[更新] 修复
+                                archive.php 页面分页问题</a></h3>
+                        </div>
+                        <div class="col-md-4 ">
+                            <a href="#">
+                                <img src="picture/1982966592.jpg" alt="文章缩略图" class="post-thumb-image img-thumbnail">
+                            </a>
+                        </div>
+                        <div class="col-md-8">
+
+                            <!--                   <hr>-->
+                            <div class="post-content" itemprop="articleBody">
+                                github：基于 bootstrap 4 开发的 typecho 响应式两栏博客主题更新时间2018-07-19更新内容：修复 archive.php
+                                模板页面的分页显示问题。涉及的博客页面包...
+                            </div>
+                        </div>
+                        <div class="col-md-12 post-meta">
+                            <ul class="">
+                                <li>时间：
+                                    <time datetime="2018-07-19T00:36:00+08:00" itemprop="datePublished">2018-07-19
+                                    </time>
+                                </li>
+                                <li itemprop="author" itemscope itemtype="http://schema.org/Person">作者： <a
+                                        itemprop="name"
+                                        href="#"
+                                        rel="author">admin</a></li>
+                                <li>分类： <a href="#">PHP</a>
+                                </li>
+                                <li itemprop="interactionCount"><a itemprop="discussionUrl"
+                                                                   href="#">6
+                                    条评论</a></li>
+                                <li class="float-right">
+                                    <a href="#"
+                                       class="float-right">阅读全文</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+
+                </article>
+                <article class="post-wrapper" itemscope itemtype="http://schema.org/BlogPosting">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3><a class="title-link" itemprop="url" title="[更新] 修复 post 页面版权显示问题"
+                                   href="#">[更新] 修复
+                                post 页面版权显示问题</a></h3>
+                        </div>
+                        <div class="col-md-4 ">
+                            <a href="#">
+                                <img src="picture/4173586961.jpg" alt="文章缩略图" class="post-thumb-image img-thumbnail">
+                            </a>
+                        </div>
+                        <div class="col-md-8">
+
+                            <!--                   <hr>-->
+                            <div class="post-content" itemprop="articleBody">
+                                github：基于 bootstrap 4 开发的 typecho 响应式两栏博客主题更新时间2018-07-19更新内容：修复原来文章页面 post.php 下
+                                版权显示问题。之前由于失误，将...
+                            </div>
+                        </div>
+                        <div class="col-md-12 post-meta">
+                            <ul class="">
+                                <li>时间：
+                                    <time datetime="2018-07-19T00:31:00+08:00" itemprop="datePublished">2018-07-19
+                                    </time>
+                                </li>
+                                <li itemprop="author" itemscope itemtype="http://schema.org/Person">作者： <a
+                                        itemprop="name"
+                                        href="#"
+                                        rel="author">admin</a></li>
+                                <li>分类： <a href="#">PHP</a>
+                                </li>
+                                <li itemprop="interactionCount"><a itemprop="discussionUrl"
+                                                                   href="#">5
+                                    条评论</a></li>
+                                <li class="float-right">
+                                    <a href="#"
+                                       class="float-right">阅读全文</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+
+                </article>
+                <article class="post-wrapper" itemscope itemtype="http://schema.org/BlogPosting">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3><a class="title-link" itemprop="url" title="[更新] 增加后台控制是否启用公共 CDN 链接"
+                                   href="#">[更新]
+                                增加后台控制是否启用公共 CDN 链接</a></h3>
+                        </div>
+                        <div class="col-md-4 ">
+                            <a href="#">
+                                <img src="picture/1846441881.jpg" alt="文章缩略图" class="post-thumb-image img-thumbnail">
+                            </a>
+                        </div>
+                        <div class="col-md-8">
+
+                            <!--                   <hr>-->
+                            <div class="post-content" itemprop="articleBody">
+                                github：基于 bootstrap 4 开发的 typecho 响应式两栏博客主题更新时间2018-07-16更新内容：用户可以在 控制台 -&gt; 外观 -&gt;
+                                设置外观 设置是否开...
+                            </div>
+                        </div>
+                        <div class="col-md-12 post-meta">
+                            <ul class="">
+                                <li>时间：
+                                    <time datetime="2018-07-16T23:43:00+08:00" itemprop="datePublished">2018-07-16
+                                    </time>
+                                </li>
+                                <li itemprop="author" itemscope itemtype="http://schema.org/Person">作者： <a
+                                        itemprop="name"
+                                        href="#"
+                                        rel="author">admin</a></li>
+                                <li>分类： <a href="#">PHP</a>
+                                </li>
+                                <li itemprop="interactionCount"><a itemprop="discussionUrl"
+                                                                   href="#">0
+                                    条评论</a></li>
+                                <li class="float-right">
+                                    <a href="#"
+                                       class="float-right">阅读全文</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+
+                </article>
+                <article class="post-wrapper" itemscope itemtype="http://schema.org/BlogPosting">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3><a class="title-link" itemprop="url" title="[更新] 增加用户自定义备案号、样式和脚本功能"
+                                   href="#">[更新]
+                                增加用户自定义备案号、样式和脚本功能</a></h3>
+                        </div>
+                        <div class="col-md-4 ">
+                            <a href="#">
+                                <img src="picture/4038731483.jpg" alt="文章缩略图" class="post-thumb-image img-thumbnail">
+                            </a>
+                        </div>
+                        <div class="col-md-8">
+
+                            <!--                   <hr>-->
+                            <div class="post-content" itemprop="articleBody">
+                                github：基于 bootstrap 4 开发的 typecho
+                                响应式两栏博客主题更新时间：2018-07-16更新内容：用户可以在后台管理中新增备案号、添加自定义样式、添加自定义脚本等内容...
+                            </div>
+                        </div>
+                        <div class="col-md-12 post-meta">
+                            <ul class="">
+                                <li>时间：
+                                    <time datetime="2018-07-16T23:39:00+08:00" itemprop="datePublished">2018-07-16
+                                    </time>
+                                </li>
+                                <li itemprop="author" itemscope itemtype="http://schema.org/Person">作者： <a
+                                        itemprop="name"
+                                        href="#"
+                                        rel="author">admin</a></li>
+                                <li>分类： <a href="#">PHP</a>
+                                </li>
+                                <li itemprop="interactionCount"><a itemprop="discussionUrl"
+                                                                   href="#">0
+                                    条评论</a></li>
+                                <li class="float-right">
+                                    <a href="#"
+                                       class="float-right">阅读全文</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+
+                </article>
+                <article class="post-wrapper" itemscope itemtype="#">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3><a class="title-link" itemprop="url" title="[更新] 修复分页 ... 省略号显示问题"
+                                   href="#">[更新] 修复分页
+                                ... 省略号显示问题</a></h3>
+                        </div>
+                        <div class="col-md-4 ">
+                            <a href="#">
+                                <img src="picture/3585149245.jpg" alt="文章缩略图" class="post-thumb-image img-thumbnail">
+                            </a>
+                        </div>
+                        <div class="col-md-8">
+
+                            <!--                   <hr>-->
+                            <div class="post-content" itemprop="articleBody">
+                                github：基于 bootstrap 4 开发的 typecho 响应式两栏博客主题问题由于 textTag 设置成了
+                                span，导致分页显示错误。涉及的文件：comments.phpinde...
+                            </div>
+                        </div>
+                        <div class="col-md-12 post-meta">
+                            <ul class="">
+                                <li>时间：
+                                    <time datetime="2018-07-15T23:18:00+08:00" itemprop="datePublished">2018-07-15
+                                    </time>
+                                </li>
+                                <li itemprop="author" itemscope itemtype="http://schema.org/Person">作者： <a
+                                        itemprop="name"
+                                        href="#"
+                                        rel="author">admin</a></li>
+                                <li>分类： <a href="#">PHP</a>
+                                </li>
+                                <li itemprop="interactionCount"><a itemprop="discussionUrl"
+                                                                   href="#">2
+                                    条评论</a></li>
+                                <li class="float-right">
+                                    <a href="#"
+                                       class="float-right">阅读全文</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+
+                </article>
+                <nav aria-label="Page navigation ">
+                    <ul class="pagination">
+                        <li class="active"><a
+                                href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li class="next"><a href="#">»</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div><!-- end #main-->
+
+            <div class="col-md-4 kit-hidden-tb" id="secondary" role="complementary">
+
+
+                <!-- 边栏显示最近文章，默认注释掉 -->
+
+
+                <!-- 边栏显示最近回复，默认开启 -->
+                <section class="widget">
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-info"><span>最近回复</span></li>
+                        <li class="list-group-item comment-item"><a
+                                href="#">dddddddddddd</a>：
+                            东想西想寻寻寻寻寻寻寻寻寻寻寻寻寻寻寻寻寻寻
+                        </li>
+                        <li class="list-group-item comment-item"><a
+                                href="#">看k'm</a>：
+                            古巴好吧
+                        </li>
+                        <li class="list-group-item comment-item"><a
+                                href="#">seerking</a>：
+                            谢谢作者
+                        </li>
+                    </ul>
+                </section>
+
+
+                <!-- 边栏显示文章分类 默认开启-->
+
+                <!-- 边栏显示归档，默认注释掉 -->
+
+
+                <!--    边栏显示其他操作，默认开启-->
+                <section class="widget">
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-info"><span>其他</span></li>
+                        <li class="list-group-item"><a
+                                href="#">登录</a></li>
+                        <li class="list-group-item"><a
+                                href="#">文章 RSS</a></li>
+                        <li class="list-group-item"><a
+                                href="#">评论 RSS</a>
+                        </li>
+                    </ul>
+                </section>
+
+
+                <!-- 边栏显示友情链接，默认注释掉 -->
+                <section class="widget">
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-info"><span></span></li>
+                        <li class="list-group-item"><a target="_blank" href="" title="">友情链接名称</a></li>
+                    </ul>
+                </section>
+
+            </div><!-- end #sidebar -->
+            <a class="to-top" style="z-index: 1200;">
+                <img src="picture/top.svg" alt="返回顶部" title="返回顶部">
+            </a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <footer id="footer" role="contentinfo">
+                            &copy; 2019 <a href="#">BootstrapBlog 主题</a>.
+                            <a target="_blank" href="#">鲁ICP备16034533号-1</a> .
+                            由 <a href="#" target="_blank">Typecho</a> 强力驱动.
+                            Theme by <a href="#" target="_blank">Postbird</a>.
+                        </footer><!-- end #footer -->
+                    </div>
+                </div>
+            </div>
+
+
+            <script src="js/jquery.min.js"></script>
+            <script src="js/popper.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/jquery.goup.min.js"></script>
+            <script src="js/prism.js"></script>
+            <script src="js/app.js"></script>
+            <!-- 用户自定义脚本内容 -->
+        </div>
+    </div>
+</div>
+</body>
+</html>
+</html>
