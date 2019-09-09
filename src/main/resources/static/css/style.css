@@ -840,52 +840,38 @@ a:hover {
 /*archive 样式 end*/
 
 
-/* 尾部*/
-.footer-copyright {
-    line-height: 20px;
-    font-size: 14px;
-    text-align: center;
-}
-.footer {
-    background: #222132;
-    overflow: hidden;
-    width: 100%;
-    color: #888;
-    padding: 12px 0 35px;
-}
-.footer-copyright p {
-    margin-bottom: 9px;
-}
-.footer-copyright {
-    line-height: 20px;
-    font-size: 14px;
-    text-align: center;
-}
-.footer .containers {
-    width: 1200px;
-    margin: 0 auto;
-}
-.footer-service {
-    margin-right: -26px;
-    margin-bottom: 30px;
-    padding-left: 0px;
-}
-.footer-service .service-item {
-    float: left;
-    height: 60px;
-    width: 200px;
-    /* border: 1px solid #343342; */
-    margin-right: 45px;
-}
-.footer-service .service-item .text {
-    font-size: 16px;
-    color: #ccc;
-    float: left;
-    margin-top: 29px;
-}
-.footer-splite {
-    height: 0;
-    display: block;
-    clear: both;
-    border-bottom: 1px solid #393854;
-}
+/* 尾部开始*/
+/*底部*/
+.footer{ background: #222132; overflow: hidden; width: 100%; color: #888; padding: 12px 0 35px;font-family: "Microsoft Yahei","HanHei SC",PingHei,"PingFang SC","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;}
+.footer a{ color: #888; transition: all .1s; }
+.footer a:hover{ color: #e8e8e8; }
+.footer-service { margin-right: -26px; margin-bottom: 30px; padding-left: 0px; }
+.footer-service .service-item{ float: left; height: 60px; width: 200px; /*border: 1px solid #343342;*/ margin-right: 45px; }
+.footer-service .service-item i{ width: 50px; height: 45px; float: left; margin: 17px 17px 0 29px; opacity: .8; -webkit-transform: scale(.6); -moz-transform: scale(.6); transform: scale(.6);}
+.footer-service .service-item.item-1 i{ background: url(../picture/bottom_icon01.png) no-repeat center center; background-size: contain;}
+.footer-service .service-item.item-2 i{ background: url(../picture/bottom_icon02.png) no-repeat center center; background-size: contain;}
+.footer-service .service-item.item-3 i{ background: url(../picture/bottom_icon03.png) no-repeat center center; background-size: contain;}
+.footer-service .service-item.item-4 i{ background: url(../picture/bottom_icon04.png) no-repeat center center; background-size: contain;}
+.footer-service .service-item.item-5 i{ background: url(../picture/bottom_icon05.png) no-repeat center center; background-size: contain;}
+.footer-service .service-item .text{ font-size: 16px; color: #ccc; float: left; margin-top: 29px;}
+.footer-splite{ height: 0; display: block; clear: both; border-bottom: 1px solid #393854; }
+.footer-links{ margin-bottom: 45px; padding-top: 40px; padding-left: 26px;}
+.footer-links .article-link{ width: 169px; float: left; /*border-right: 1px solid #343342;*/ margin-right: 43px; line-height: 2; font-size: 14px;}
+.footer-links .article-link dt{ color: #ccc; font-size: 16px; margin-bottom: 10px; line-height: 2;font-weight: 300;}
+.footer-links .article-link dd{ line-height: 2; }
+.footer-links .contact{ width: 90px; float: left; margin-right:23px;}
+.footer-links .contact h3{ font-size: 16px; color: #ccc; line-height: 2; margin-bottom: 10px;}
+.footer-links .contact .tel{ margin-bottom: 15px;}
+.footer-links .contact .tel .text{ font-size: 16px; margin-bottom: 5px;}
+.footer-links .contact .tel .number{ font-size: 22px; color: #fff; font-family: Arial,"Microsoft Yahei","HanHei SC",PingHei,"PingFang SC","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;}
+.footer-links .contact .qrcode{ margin-right: -18px; }
+.footer-links .contact .qrcode-item{ float: left; margin-right: 18px; text-align: center; }
+.footer-links .contact .qrcode-item p{ font-size: 14px; color: #ccc; margin-top: 12px; }
+.footer-copyright{ line-height: 20px; font-size: 14px; text-align: center; }
+.footer-copyright p{ margin-bottom: 9px; }
+/**尾部结束*/
+
+/**导航栏相关 固定导航栏开始|*/
+
+
+/**导航栏相关 固定导航栏结束*/
