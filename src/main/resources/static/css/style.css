@@ -840,3 +840,52 @@ a:hover {
 /*archive 样式 end*/
 
 
+/* 尾部*/
+.footer-copyright {
+    line-height: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+.footer {
+    background: #222132;
+    overflow: hidden;
+    width: 100%;
+    color: #888;
+    padding: 12px 0 35px;
+}
+.footer-copyright p {
+    margin-bottom: 9px;
+}
+.footer-copyright {
+    line-height: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+.footer .containers {
+    width: 1200px;
+    margin: 0 auto;
+}
+.footer-service {
+    margin-right: -26px;
+    margin-bottom: 30px;
+    padding-left: 0px;
+}
+.footer-service .service-item {
+    float: left;
+    height: 60px;
+    width: 200px;
+    /* border: 1px solid #343342; */
+    margin-right: 45px;
+}
+.footer-service .service-item .text {
+    font-size: 16px;
+    color: #ccc;
+    float: left;
+    margin-top: 29px;
+}
+.footer-splite {
+    height: 0;
+    display: block;
+    clear: both;
+    border-bottom: 1px solid #393854;
+}

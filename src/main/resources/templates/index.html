@@ -46,6 +46,10 @@
         href="http://browsehappy.com/">升级你的浏览器</a>.
 </div>
 <![endif]-->
+<!--引入个人中心-->
+<div th:replace="pages/main/personal::toPersonal"></div>
+
+
 
 <!--引入头部导航栏-->
 <div th:replace="pages/main/header::topHeader"></div>
@@ -379,7 +383,7 @@
                     <ul class="list-group">
                         <li class="list-group-item list-group-item-info"><span>其他</span></li>
                         <li class="list-group-item"><a
-                                href="login">登录</a></li>
+                                href="#">其他</a></li>
                         <li class="list-group-item"><a
                                 href="#">文章 RSS</a></li>
                         <li class="list-group-item"><a
@@ -402,8 +406,7 @@
             <!--  返回顶部   -->
             <div th:replace="pages/main/toTop::toTop"></div>
 
-            <!--尾部版本标识-->
-            <div th:replace="pages/main/footer::footer"></div>
+
 
 
             <script src="js/jquery.min.js"></script>
@@ -415,6 +418,10 @@
             <!-- 用户自定义脚本内容 -->
         </div>
     </div>
+
+
+    <!--尾部版本标识-->
+    <div th:replace="pages/main/footer::footer"></div>
 </div>
 </body>
 </html>

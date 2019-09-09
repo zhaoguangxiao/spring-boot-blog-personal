@@ -58,4 +58,10 @@ public class IndexController {
         return "pages/login";
     }
 
+
+    @GetMapping("daohang")
+    public String daohang(){
+        return "pages/test";
+    }
+
 }
