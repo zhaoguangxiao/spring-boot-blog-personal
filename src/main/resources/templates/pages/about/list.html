@@ -1,6 +1,6 @@
 
 <!DOCTYPE HTML>
-<html class="no-js">
+<html class="no-js" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -47,54 +47,9 @@
 </div>
 <![endif]-->
 
-<header id="header" class="clearfix">
-    <nav class="navbar navbar-dark bg-dark navbar-expand-md">
-        <div class="container">
-            <a class="navbar-brand" href="/"
-               title="基于Bootstrap4的响应式typecho博客主题">BootstrapBlog 主题</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item ">
-                        <a class="nav-link" href="/">首页 <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="category"
-                           title="文章分类"><span>文章分类</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="archive"
-                           title="文章归档"><span>文章归档</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="label"
-                           title="标签"><span>标签</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="link"
-                           title="友链"><span>友链</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about"
-                           title="关于"><span>关于</span></a>
-                    </li>
-                </ul>
-                <div class="navbar-text">
-                    <form method="post" action="" class="search-form form-inline">
-                        <div class="form-group">
-                            <input type="search" name="s" class="form-control form-control-sm"/>
-                            <button class="btn btn-info btn-sm">搜索</button>
-                        </div>
-                    </form>
-                </div>
+<!--引入头部导航栏-->
+<div th:replace="pages/main/header::topHeader"></div>
 
-            </div>
-        </div>
-    </nav>
-</header><!-- end #header -->
 <div id="body">
     <div class="container main-wrapper">
         <div class="row">
@@ -225,21 +180,11 @@
                 </div>
             </div>
 
-            <a class="to-top" style="z-index: 1200;">
-                <img src="http://theme.typecho.ptbird.cn/bootstrap-blog/usr/themes/postbird/img/top.svg" alt="返回顶部" title="返回顶部">
-            </a>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <footer id="footer" role="contentinfo">
-                            &copy; 2019 <a href="http://theme.typecho.ptbird.cn/bootstrap-blog/">BootstrapBlog 主题</a>.
-                            <a target="_blank" href="//www.miitbeian.gov.cn">鲁ICP备16034533号-1</a> .
-                            由 <a href="http://www.typecho.org"  target="_blank">Typecho</a> 强力驱动.
-                            Theme by  <a href="http://www.ptbird.cn" target="_blank">Postbird</a>.
-                        </footer><!-- end #footer -->
-                    </div>
-                </div>
-            </div>
+            <!--  返回顶部   -->
+            <div th:replace="pages/main/toTop::toTop"></div>
+
+            <!--尾部版本标识-->
+            <div th:replace="pages/main/footer::footer"></div>
 
 </body>
 <!-- 用户自定义脚本内容 -->

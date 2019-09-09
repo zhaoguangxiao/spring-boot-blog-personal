@@ -1,6 +1,6 @@
 
 <!DOCTYPE HTML>
-<html class="no-js">
+<html class="no-js" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,54 +44,9 @@
 </div>
 <![endif]-->
 
-<header id="header" class="clearfix">
-    <nav class="navbar navbar-dark bg-dark navbar-expand-md">
-        <div class="container">
-            <a class="navbar-brand" href="/"
-               title="基于Bootstrap4的响应式typecho博客主题">BootstrapBlog 主题</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item ">
-                        <a class="nav-link" href="/">首页 <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="category"
-                           title="文章分类"><span>文章分类</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="archive"
-                           title="文章归档"><span>文章归档</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="label"
-                           title="标签"><span>标签</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="link"
-                           title="友链"><span>友链</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about"
-                           title="关于"><span>关于</span></a>
-                    </li>
-                </ul>
-                <div class="navbar-text">
-                    <form method="post" action="" class="search-form form-inline">
-                        <div class="form-group">
-                            <input type="search" name="s" class="form-control form-control-sm"/>
-                            <button class="btn btn-info btn-sm">搜索</button>
-                        </div>
-                    </form>
-                </div>
+<!--引入头部导航栏-->
+<div th:replace="pages/main/header::topHeader"></div>
 
-            </div>
-        </div>
-    </nav>
-</header><!-- end #header -->
 <div id="body">
     <div class="container main-wrapper">
         <div class="row">
@@ -110,21 +65,12 @@
                         <div class="archives"><div class="archives-item"><h4>2018年12月</h4><hr><ul class="archives_list"><li>03日 <a href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/archives/43/">【声明】本主题不再维护，联系方式见文章内</a></li></ul></div><div class="archives-item"><h4>2018年07月</h4><hr><ul class="archives_list"><li>19日 <a href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/archives/42/">[更新] 修复 archive.php 页面分页问题</a></li><li>19日 <a href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/archives/38/">[更新] 修复 post 页面版权显示问题</a></li><li>16日 <a href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/archives/36/">[更新] 增加后台控制是否启用公共 CDN 链接</a></li><li>16日 <a href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/archives/34/">[更新] 增加用户自定义备案号、样式和脚本功能</a></li><li>15日 <a href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/archives/31/">[更新] 修复分页 ... 省略号显示问题</a></li><li>15日 <a href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/archives/30/">关于本站的文章置顶</a></li><li>15日 <a href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/archives/26/">博客主题开启或关闭某些边栏</a></li><li>15日 <a href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/archives/23/">博客主题的右侧边栏 sticky 效果</a></li><li>15日 <a href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/archives/21/">基于Bootstrap4的 响应式 typecho 博客主题</a></li><li>15日 <a href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/archives/20/">[示例文章] egg.js 通过 form 和 ajax 两种方式上传文件并自定义目录和文件名</a></li><li>15日 <a href="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/archives/19/">[示例文章] egg开发脚手架 | egg-generator-postbird</a></li></ul></div></div>            </div>
                 </article>
             </div><!-- end #main-->
-            <a class="to-top" style="z-index: 1200;">
-                <img src="http://theme.typecho.ptbird.cn/bootstrap-blog/usr/themes/postbird/img/top.svg" alt="返回顶部" title="返回顶部">
-            </a>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <footer id="footer" role="contentinfo">
-                            &copy; 2019 <a href="http://theme.typecho.ptbird.cn/bootstrap-blog/">BootstrapBlog 主题</a>.
-                            <a target="_blank" href="//www.miitbeian.gov.cn">鲁ICP备16034533号-1</a> .
-                            由 <a href="http://www.typecho.org"  target="_blank">Typecho</a> 强力驱动.
-                            Theme by  <a href="http://www.ptbird.cn" target="_blank">Postbird</a>.
-                        </footer><!-- end #footer -->
-                    </div>
-                </div>
-            </div>
+
+            <!--  返回顶部   -->
+            <div th:replace="pages/main/toTop::toTop"></div>
+
+            <!--尾部版本标识-->
+            <div th:replace="pages/main/footer::footer"></div>
 
 </body>
 <!-- 用户自定义脚本内容 -->
