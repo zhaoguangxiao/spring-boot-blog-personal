@@ -283,3 +283,38 @@
 		padding: 2.1em 0 1.5em 0;
 	}
 }
+
+
+
+/**头部*/
+@media screen and (max-width: 1000px) { .wfs{display:none; }
+}
+
+.wfs{
+	font-size: 12px;
+	line-height: 40px;
+}
+
+.top-div{
+	width: 1210px;
+	margin: 0 auto;
+}
+.my-nav{
+	display: flex;
+	justify-content: space-between;
+	list-style:none;
+	padding-left:0;
+	margin-bottom:0;
+
+}
+.spacer{
+	width: 1px;
+	height: 12px;
+	padding: 0;
+	/*margin-top: 14px;*/
+	/*background: #C8C8C8 none repeat scroll 0% 0%;*/
+	margin-top: 15px;
+	background: #aaa none repeat scroll 0% 0%;
+	overflow: hidden;
+}
+
