@@ -2084,19 +2084,6 @@ div.token-input-dropdown ul li.token-input-selected-dropdown-item {
 }
 
 /*登录*/
-.link-primary {
-    cursor: pointer;
-}
-.link-primary, .link-white:hover {
-    color: #43bc60!important;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
-}
-.other_oauth{
-    color: #1b1e21;
-}
 .hen-xian{
     margin:0px;
     height:1px;

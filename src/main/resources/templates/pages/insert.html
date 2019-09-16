@@ -9,7 +9,7 @@
     <meta name="robots" content="noindex, nofollow">
     <link th:href="@{css/bootstrap.min.css}" rel="stylesheet">
     <link rel="stylesheet" th:href="@{css/style.css}">
-    <link rel="stylesheet" th:href="@{/css/login.css}">
+    <link rel="stylesheet" th:href="@{/css/insert.css}">
     <link rel="stylesheet" th:href="@{/css/index_1.css}">
 </head>
 <body class="body-100">
@@ -32,16 +32,19 @@
         <form action="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/action/login?_=8f1487d291c9ae9e1b355b1446b28934"
               method="post" name="login" role="form">
             <p>
-                <label for="name" class="sr-only">用户名</label>
+                <label for="name" class="label-css">用户名</label>
                 <input type="text" id="name" name="name" value="" placeholder="用户名" class="text-l w-100" autofocus/>
+                <span class="form-error-message">用户名不能为空</span>
             </p>
             <p>
-                <label for="password" class="sr-only">密码</label>
+                <label for="password" class="label-css">密码</label>
                 <input type="password" id="password" name="password" class="text-l w-100" placeholder="密码"/>
+                <span class="form-error-message">密码不能为空</span>
             </p>
-            <p style="float: left;">
-                <label for="remember"><input type="checkbox" name="remember" class="checkbox" value="1" id="remember"/>
-                    下次自动登录</label>
+            <p>
+                <label for="password" class="label-css">确认密码</label>
+                <input type="password" id="queryPwd" name="queryPwd" class="text-l w-100" placeholder="确认密码"/>
+                <span class="form-error-message">确认密码不能为空</span>
             </p>
 
             <p class="submit">
@@ -51,12 +54,10 @@
         </form>
 
         <p class="more-link">
-            <a class="link-primary" href="">忘记密码</a>
-            &nbsp;|&nbsp;
             <span class="other_oauth">
-                还没有注册帐号？
+                已经注册了？
             </span>
-            <a class="link-primary" th:href="@{/}">立即注册</a>
+            <a class="link-primary" th:href="@{/login}">登录</a>
         </p>
     </div>
 </div>

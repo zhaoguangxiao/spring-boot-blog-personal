@@ -875,3 +875,34 @@ a:hover {
 
 
 /**导航栏相关 固定导航栏结束*/
+
+
+/**登录注册样式*/
+.label-css{
+    float: left;
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.other_oauth{
+    color: #1b1e21;
+}
+
+.form-error-message {
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 0;
+    color: #ed3e3e;
+}
+
+.link-primary {
+    cursor: pointer;
+}
+.link-primary, .link-white:hover {
+    color: #43bc60!important;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
