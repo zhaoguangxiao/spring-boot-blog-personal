@@ -64,4 +64,10 @@ public class IndexController {
         return "pages/test";
     }
 
+
+    @GetMapping("insert")
+    public String insert(){
+        return "pages/insert";
+    }
+
 }
