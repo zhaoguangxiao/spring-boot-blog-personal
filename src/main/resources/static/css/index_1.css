@@ -317,4 +317,11 @@
 	background: #aaa none repeat scroll 0% 0%;
 	overflow: hidden;
 }
+.header-top-css{
+	position: sticky;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+}
 
