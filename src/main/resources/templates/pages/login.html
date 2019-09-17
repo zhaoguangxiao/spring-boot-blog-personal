@@ -31,17 +31,16 @@
                       p-id="7681"></path>
             </svg>
         </a></h1>
-        <form action="http://theme.typecho.ptbird.cn/bootstrap-blog/index.php/action/login?_=8f1487d291c9ae9e1b355b1446b28934"
-              method="post" name="login" role="form">
+        <form th:action="@{/login}" th:object="${loginUserBean}" method="post">
             <p>
                 <label for="name" class="label-css">用户名</label>
-                <input type="text" id="name" name="name" value="" placeholder="用户名" class="text-l w-100" autofocus/>
-                <span class="form-error-message">用户名不能为空</span>
+                <input type="text" id="name" name="userName" th:field="*{userName}" placeholder="用户名" class="text-l w-100" autofocus/>
+                <span class="form-error-message" th:if="${#fields.hasErrors('userName')} " th:errors="*{userName}"></span>
             </p>
             <p>
                 <label for="password" class="label-css">密码</label>
-                <input type="password" id="password" name="password" class="text-l w-100" placeholder="密码"/>
-                <span class="form-error-message">密码不能为空</span>
+                <input type="password" id="password" name="pwd" th:field="*{pwd}" class="text-l w-100" placeholder="密码"/>
+                <span class="form-error-message" th:if="${#fields.hasErrors('pwd')} " th:errors="*{pwd}"></span>
             </p>
             <p style="float: left;">
                 <label for="remember"><input type="checkbox" name="remember" class="checkbox" value="1" id="remember"/>

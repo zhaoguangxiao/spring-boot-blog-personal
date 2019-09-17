@@ -55,15 +55,8 @@ public class IndexController {
         return "pages/article/list";
     }
 
-    @GetMapping("login")
-    public String login(){
-        return "pages/login";
-    }
 
 
-    @GetMapping("insert")
-    public String insert(){
-        return "pages/insert";
-    }
+
 
 }

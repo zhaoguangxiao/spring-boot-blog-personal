@@ -47,8 +47,10 @@ public class ShiroConfig {
         hashMap.put("/insert", "anon");
         //放行注册用户请求
         hashMap.put("/addUserBean", "anon");
+        //放行swagger.html
         hashMap.put("/swagger-ui.html", "anon");
-
+        //放行请求验证码
+        hashMap.put("/validateCode", "anon");
 
 
         //授权
