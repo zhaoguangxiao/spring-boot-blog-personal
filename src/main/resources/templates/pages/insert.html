@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>注册页面</title>
     <meta name="robots" content="noindex, nofollow">
-    <link th:href="@{css/bootstrap.min.css}" rel="stylesheet">
-    <link rel="stylesheet" th:href="@{css/style.css}">
-    <link rel="stylesheet" th:href="@{/css/insert.css}">
-    <link rel="stylesheet" th:href="@{/css/index_1.css}">
+    <link th:href="@{/static/css/bootstrap.min.css}" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/static/css/style.css}">
+    <link rel="stylesheet" th:href="@{/static/css/insert.css}">
+    <link rel="stylesheet" th:href="@{/static/css/index_1.css}">
 </head>
 <body class="body-100">
 <!--[if lt IE 9]>
@@ -45,8 +45,8 @@
             <p>
                 <label for="pwd" class="label-css">密码</label>
                 <input type="password" id="pwd" th:field="*{pwd}" name="queryPwd" class="text-l w-100"
-                       placeholder="密码"/>
-                <span class="form-error-message" th:if="${#fields.hasErrors('pwd')} " th:errors="*{pwd}">密码不能为空</span>
+                       placeholder="6~16位数字,英文,符号至少两种组合"/>
+                <span class="form-error-message" th:if="${#fields.hasErrors('pwd')} " th:errors="*{pwd}"></span>
             </p>
 
             <p>
@@ -78,8 +78,8 @@
 <!--尾部版本标识-->
 <div th:replace="pages/main/footer::footer"></div>
 
-<script th:src="@{/js/jquery.min.js}" src="js/jquery.min.js"></script>
-<script th:src="@{/js/bootstrap.min.js}"></script>
+<script th:src="@{/static/js/jquery.min.js}" src="js/jquery.min.js"></script>
+<script th:src="@{/static/js/bootstrap.min.js}"></script>
 <script>
     //刷新img
     function js_method(){

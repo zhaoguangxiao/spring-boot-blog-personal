@@ -1,10 +1,12 @@
 package com.zgx.blog.model;
 
 import com.zgx.blog.validate.IsEmailValidater;
+import com.zgx.blog.validate.IsPwdVerificationRule;
 import com.zgx.blog.validate.IsVerificationCodeExist;
 import com.zgx.blog.validate.UserNameValidater;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import io.swagger.annotations.ApiOperation;
 import lombok.Data;
 
 import javax.validation.constraints.NotBlank;
@@ -32,12 +34,21 @@ public class UserBean extends LoginUserBean {
     @ApiModelProperty(value = "用户更新时间")
     private Long updateTime;
 
+    @ApiModelProperty(value = "用户头像", required = true)
+    private String img;
+
     @Override
     @UserNameValidater(message = "用户名已经存在")
     public String getUserName() {
         return super.getUserName();
     }
 
+
+    @Override
+    @IsPwdVerificationRule(message = "密码格式不正确")
+    public String getPwd() {
+        return super.getPwd();
+    }
 
     @NotBlank(message = "验证码不能为空")
     @IsVerificationCodeExist(message = "验证码不正确")

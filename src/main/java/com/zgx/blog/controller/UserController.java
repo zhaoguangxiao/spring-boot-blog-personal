@@ -68,9 +68,8 @@ public class UserController {
         userBean.setUpdateTime(System.currentTimeMillis());
         //对密码进行加密
         userBean.setPwd(encryptionPassword(userBean.getPwd(), userBean.getUserName()));
-
-
-
+        //设置默认头像
+        userBean.setImg("picture/box.png");
         System.out.println(userBean);
         //跳转登录页面
         return "redirect:/login";

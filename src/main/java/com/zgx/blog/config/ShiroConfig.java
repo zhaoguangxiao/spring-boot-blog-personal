@@ -56,7 +56,6 @@ public class ShiroConfig {
         hashMap.put("/validateCode", "anon");
 
 
-
         //授权
         hashMap.put("/list", "perms[user:add]");
         //        hashMap.put("/form", "authc");
