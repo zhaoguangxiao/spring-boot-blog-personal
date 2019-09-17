@@ -2,32 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9543a06-b8ba-45f1-9ee3-501ae5f96aa9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zgx/blog/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zgx/blog/controller/VerificationCodeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zgx/blog/model/BaseBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zgx/blog/model/LoginUserBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zgx/blog/utils/ValidateCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zgx/blog/validate/IsEmailValidater.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zgx/blog/validate/IsVerificationCodeExist.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zgx/blog/validate/UserNameValidater.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zgx/blog/validate/impl/IsEmailValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zgx/blog/validate/impl/IsVerificationCodeExistValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zgx/blog/validate/impl/UserNameValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zgx/blog/config/WebMvcConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-blog-personal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-blog-personal.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zgx/blog/SpringBootBlogApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zgx/blog/SpringBootBlogApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zgx/blog/config/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zgx/blog/config/ShiroConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zgx/blog/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zgx/blog/controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zgx/blog/model/UserBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zgx/blog/model/UserBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/insert.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/insert.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zgx/blog/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zgx/blog/controller/IndexController.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path=".idea/libraries/Maven__com_zaxxer_HikariCP_3_2_0.xml" />
+    <ignored path=".idea/libraries/Maven__mysql_mysql_connector_java_5_1_42.xml" />
+    <ignored path=".idea/libraries/Maven__org_mybatis_mybatis_3_4_5.xml" />
+    <ignored path=".idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_1.xml" />
+    <ignored path=".idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_3_1.xml" />
+    <ignored path=".idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_3_1.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_1_8_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_spring_jdbc_5_1_9_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_spring_tx_5_1_9_RELEASE.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,16 +44,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/controller/UserController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/config/ShiroConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="72" column="8" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#login#1;class#UserController#0" />
-                <element signature="method#insert#0;class#UserController#0" />
-                <element signature="e#1670#1716#1" />
-              </folding>
+            <state relative-caret-position="233">
+              <caret line="49" column="18" lean-forward="true" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -108,8 +92,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/springbootblog/SpringBootBlogApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/SpringBootBlogApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/config/WebMvcConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/pages/category/list.js" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/pages/category/test.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/pages/main/toTop.html" />
@@ -132,8 +114,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/static/css/login.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/config/UserRealm.java" />
         <option value="$PROJECT_DIR$/src/main/resources/db/migration/V1__create_tb_user_table.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/config/SwaggerConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/db/migration/V2__add_colum_tb_user_userName.table.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/model/LoginUserBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/model/BaseBean.java" />
@@ -145,7 +125,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/validate/impl/IsEmailValidator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/validate/impl/UserNameValidator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/utils/ValidateCode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/config/ShiroConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/controller/VerificationCodeController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/pages/insert.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/validate/IsEmailValidater.java" />
@@ -156,6 +135,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/model/UserBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/validate/impl/IsVerificationCodeExistValidator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/config/SwaggerConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/config/WebMvcConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/SpringBootBlogApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/config/ShiroConfig.java" />
       </list>
     </option>
   </component>
@@ -395,7 +379,7 @@
       <workItem from="1568614650613" duration="6966000" />
       <workItem from="1568622633302" duration="6498000" />
       <workItem from="1568682019643" duration="1148000" />
-      <workItem from="1568683423780" duration="13832000" />
+      <workItem from="1568683423780" duration="14835000" />
     </task>
     <task id="LOCAL-00001" summary="静态页面主页与文章分类">
       <created>1567845915538</created>
@@ -467,17 +451,24 @@
       <option name="project" value="LOCAL" />
       <updated>1568688818136</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="验证码添加注册优化">
+      <created>1568703000655</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1568703000655</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77433000" />
+    <option name="totallyTimeSpent" value="78436000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2859442" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26180258" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -487,8 +478,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.29300776" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.49944505" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.34406215" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3873474" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -499,7 +490,7 @@
       <window_info anchor="bottom" id="Messages" order="11" weight="0.2918979" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32963374" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" weight="0.21087681" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.21531631" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -601,7 +592,8 @@
     <MESSAGE value="登录注册页面优化" />
     <MESSAGE value="登录注册页面优化-显示" />
     <MESSAGE value="初始化用户实体类" />
-    <option name="LAST_COMMIT_MESSAGE" value="初始化用户实体类" />
+    <MESSAGE value="验证码添加注册优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="验证码添加注册优化" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -648,17 +640,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/meta.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pages/category/list.js" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/personal.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
@@ -810,22 +791,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/config/SwaggerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/dao.java">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="891">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V1__create_tb_user_table.sql">
       <provider selected="true" editor-type-id="text-editor">
@@ -841,30 +808,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/controller/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_131/src.zip!/java/io/Serializable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="356">
           <caret line="157" column="50" selection-start-line="157" selection-start-column="39" selection-end-line="157" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/model/BaseBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -877,14 +824,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="758">
-          <caret line="133" column="34" selection-start-line="133" selection-start-column="34" selection-end-line="133" selection-end-column="34" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/utils/ValidateCode.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -914,20 +853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="77" column="12" selection-start-line="77" selection-start-column="6" selection-end-line="77" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/config/ShiroConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="52" column="45" lean-forward="true" selection-start-line="52" selection-start-column="45" selection-end-line="52" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pages/insert.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1341">
-          <caret line="82" column="8" lean-forward="true" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -1018,16 +943,97 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/model/BaseBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" selection-start-column="8" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="36" column="47" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="98" column="36" lean-forward="true" selection-start-line="98" selection-start-column="36" selection-end-line="98" selection-end-column="36" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/config/WebMvcConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="729">
+          <caret line="27" column="56" lean-forward="true" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#636#637#0" expanded="true" />
+            <element signature="e#671#672#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/SpringBootBlogApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="72" column="8" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="8" />
+        <state relative-caret-position="-539">
+          <caret line="22" column="19" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#login#1;class#UserController#0" />
             <element signature="method#insert#0;class#UserController#0" />
-            <element signature="e#1670#1716#1" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pages/insert.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2192">
+          <caret line="82" column="8" lean-forward="true" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/config/SwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Swagger2Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/config/ShiroConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="49" column="18" lean-forward="true" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
         </state>
       </provider>
     </entry>

@@ -4,7 +4,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
-
+/**
+ * @author Administrator
+ * @date 2019年9月17日14:55:41
+ */
+@EnableWebMvc
 @SpringBootApplication
 public class SpringBootBlogApplication {
 
