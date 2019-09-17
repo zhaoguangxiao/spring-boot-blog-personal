@@ -1,5 +1,6 @@
 package com.zgx.blog.controller;
 
+import io.swagger.annotations.Api;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
  * @date 2019/9/7 14:13
  */
 @Controller
+@Api(value = "基础控制器")
 public class IndexController {
 
 
@@ -56,12 +58,6 @@ public class IndexController {
     @GetMapping("login")
     public String login(){
         return "pages/login";
-    }
-
-
-    @GetMapping("daohang")
-    public String daohang(){
-        return "pages/test";
     }
 
 
