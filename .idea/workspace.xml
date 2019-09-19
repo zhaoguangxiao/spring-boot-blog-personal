@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9543a06-b8ba-45f1-9ee3-501ae5f96aa9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zgx/blog/validate/IsPwdVerificationRule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zgx/blog/validate/impl/IsPwdVerificationRuleValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V3__add_colum_tb_user_img_table.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/picture/box.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zgx/blog/dao/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zgx/blog/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zgx/blog/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V4__add_tb_user_table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/zgx/blog/springbootblog/service/UserServiceTestCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zgx/blog/config/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zgx/blog/config/ShiroConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zgx/blog/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zgx/blog/config/WebMvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zgx/blog/SpringBootBlogApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zgx/blog/SpringBootBlogApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zgx/blog/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zgx/blog/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zgx/blog/model/UserBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zgx/blog/model/UserBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/insert.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/insert.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zgx/blog/validate/impl/UserNameValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zgx/blog/validate/impl/UserNameValidator.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,11 +48,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/service/impl/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="414" column="46" lean-forward="true" selection-start-line="414" selection-start-column="46" selection-end-line="414" selection-end-column="46" />
+            <state relative-caret-position="127">
+              <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/validate/impl/UserNameValidator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="127">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -65,6 +78,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -98,11 +112,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/templates/pages/category/test.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/pages/main/toTop.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/css/personal.css" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/pages/test.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/css/head.js" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/pages/main/footer.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/pages/main/header.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/css/index_1.css" />
@@ -121,13 +130,11 @@
         <option value="$PROJECT_DIR$/src/main/resources/db/migration/V2__add_colum_tb_user_userName.table.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/model/LoginUserBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/model/BaseBean.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/pages/login.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/controller/IndexController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/validate/UserNameValidater.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/validate/IsEmail.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/validate/impl/IsEmailValidator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/validate/impl/UserNameValidator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/utils/ValidateCode.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/controller/VerificationCodeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/validate/IsEmailValidater.java" />
@@ -138,17 +145,24 @@
         <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/validate/impl/IsVerificationCodeExistValidator.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/config/SwaggerConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/SpringBootBlogApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/validate/IsVerificationRule.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/validate/impl/IsPwdVerificationRuleValidator.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/pages/insert.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/validate/IsPwdVerificationRule.java" />
         <option value="$PROJECT_DIR$/src/main/resources/db/migration/V3__add_colum_tb_user_img_table.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/model/UserBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/config/WebMvcConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/config/ShiroConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/pages/login.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/pages/insert.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/SpringBootBlogApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/db/migration/V4__add_tb_user_table.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/dao/UserMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/zgx/blog/springbootblog/service/UserServiceTestCase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/validate/impl/UserNameValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/service/impl/UserServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -176,8 +190,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="283" />
-    <option name="y" value="185" />
+    <option name="x" value="320" />
+    <option name="y" value="198" />
     <option name="width" value="1400" />
     <option name="height" value="871" />
   </component>
@@ -187,7 +201,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -271,7 +284,30 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="zgx" type="462c0819:PsiDirectoryNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-blog-personal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-blog-personal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="zgx" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-blog-personal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-blog-personal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="zgx" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-blog-personal" type="b2602c69:ProjectViewProjectNode" />
@@ -334,15 +370,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="picture" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-blog-personal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-blog-personal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -354,11 +381,85 @@
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="spring-boot-blog-personal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-blog-personal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-blog-personal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-blog-personal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-blog-personal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-blog-personal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-blog-personal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-blog-personal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-blog-personal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-blog-personal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="zgx" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-blog-personal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-blog-personal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="zgx" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-blog-personal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-blog-personal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="zgx" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="springbootblog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-blog-personal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-blog-personal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="zgx" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="springbootblog" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -370,7 +471,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-boot-cache" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -411,7 +512,55 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.SpringBootBlogApplication">
+    <configuration name="UserServiceTestCase.assertNotNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot-blog-personal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zgx.blog.springbootblog.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zgx.blog.springbootblog.service" />
+      <option name="MAIN_CLASS_NAME" value="com.zgx.blog.springbootblog.service.UserServiceTestCase" />
+      <option name="METHOD_NAME" value="assertNotNull" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTestCase.findByUserBeanByUserName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot-blog-personal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zgx.blog.springbootblog.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zgx.blog.springbootblog.service" />
+      <option name="MAIN_CLASS_NAME" value="com.zgx.blog.springbootblog.service.UserServiceTestCase" />
+      <option name="METHOD_NAME" value="findByUserBeanByUserName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTestCase.insert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot-blog-personal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zgx.blog.springbootblog.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zgx.blog.springbootblog.service" />
+      <option name="MAIN_CLASS_NAME" value="com.zgx.blog.springbootblog.service.UserServiceTestCase" />
+      <option name="METHOD_NAME" value="insert" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SpringBootBlogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="spring-boot-blog-personal" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.zgx.blog.SpringBootBlogApplication" />
@@ -419,6 +568,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserServiceTestCase.findByUserBeanByUserName" />
+        <item itemvalue="JUnit.UserServiceTestCase.insert" />
+        <item itemvalue="JUnit.UserServiceTestCase.assertNotNull" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -442,7 +598,10 @@
       <workItem from="1568682019643" duration="1148000" />
       <workItem from="1568683423780" duration="15700000" />
       <workItem from="1568704799254" duration="3098000" />
-      <workItem from="1568708013786" duration="1435000" />
+      <workItem from="1568708013786" duration="2528000" />
+      <workItem from="1568774168167" duration="4017000" />
+      <workItem from="1568794917417" duration="227000" />
+      <workItem from="1568855154505" duration="2735000" />
     </task>
     <task id="LOCAL-00001" summary="静态页面主页与文章分类">
       <created>1567845915538</created>
@@ -528,17 +687,40 @@
       <option name="project" value="LOCAL" />
       <updated>1568703990421</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="页面静态资源访问bug修复">
+      <created>1568710028091</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1568710028091</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="UserServiceTestCase_assertNotNull - 2019.09.19 at 09h 23m 47s.xml">
+      <configuration name="UserServiceTestCase.assertNotNull" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserServiceTestCase_insert - 2019.09.19 at 09h 28m 33s.xml">
+      <configuration name="UserServiceTestCase.insert" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserServiceTestCase_insert - 2019.09.19 at 09h 29m 41s.xml">
+      <configuration name="UserServiceTestCase.insert" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserServiceTestCase_insert - 2019.09.19 at 09h 32m 04s.xml">
+      <configuration name="UserServiceTestCase.insert" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserServiceTestCase_findByUserBeanByUserName - 2019.09.19 at 09h 43m 09s.xml">
+      <configuration name="UserServiceTestCase.findByUserBeanByUserName" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83834000" />
+    <option name="totallyTimeSpent" value="91906000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23658799" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28165236" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -549,18 +731,18 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.41509435" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.2663707" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4772475" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.39844617" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.472808" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32963374" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.42286348" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32963374" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" weight="0.27524972" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.22974473" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -573,7 +755,7 @@
       <window_info anchor="right" id="Bean Validation" order="9" weight="0.23766094" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19527897" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35890558" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -583,29 +765,29 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.28856826" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.26859045" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.41509435" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.23196448" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.472808" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32963374" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.42286348" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32963374" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.22974473" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.13090129" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.12607296" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" weight="0.3299356" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="9" weight="0.23766094" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -664,10 +846,21 @@
     <MESSAGE value="初始化用户实体类" />
     <MESSAGE value="验证码添加注册优化" />
     <MESSAGE value="swagger-ui/html bug修复" />
-    <option name="LAST_COMMIT_MESSAGE" value="swagger-ui/html bug修复" />
+    <MESSAGE value="页面静态资源访问bug修复" />
+    <option name="LAST_COMMIT_MESSAGE" value="页面静态资源访问bug修复" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>userService.findUserBeanByUserName(userName);</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>beanByUserName</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>userBean</expression-string>
         <language-id>JAVA</language-id>
@@ -703,79 +896,13 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>loginUserBean</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pages/label/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="47" column="56" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pages/category/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="47" column="56" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pages/article/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="48" column="56" selection-start-line="48" selection-start-column="56" selection-end-line="48" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pages/archive/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="47" column="56" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pages/about/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="50" column="56" selection-start-line="50" selection-start-column="56" selection-end-line="50" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/nav.js" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pages/test.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pages/link/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" selection-start-line="12" selection-end-line="25" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="12" column="7" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pages/main/toTop.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" selection-start-line="8" selection-end-line="10" selection-end-column="4" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pages/main/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-399">
-          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -814,13 +941,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/dao.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V1__create_tb_user_table.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V2__add_colum_tb_user_userName.table.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
@@ -873,16 +993,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/validate/impl/UserNameValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="12" column="90" lean-forward="true" selection-start-line="12" selection-start-column="90" selection-end-line="12" selection-end-column="90" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/validate/impl/IsVerificationCodeExistValidator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
@@ -910,14 +1020,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="98" column="36" lean-forward="true" selection-start-line="98" selection-start-column="36" selection-end-line="98" selection-end-column="36" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/controller/IndexController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -928,13 +1030,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/SpringBootBlogApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/Swagger2Config.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/model/BaseBean.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -942,26 +1037,6 @@
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/model/LoginUserBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pages/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="74" column="12" lean-forward="true" selection-start-line="74" selection-start-column="12" selection-end-line="79" selection-end-column="18" />
-          <folding>
-            <element signature="n#style#0;n#p#2;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1023,32 +1098,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/model/UserBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="36" column="53" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1120#1121#0" expanded="true" />
-            <element signature="e#1162#1163#0" expanded="true" />
-            <element signature="e#1255#1256#0" expanded="true" />
-            <element signature="e#1292#1293#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="71" column="25" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#login#1;class#UserController#0" />
-            <element signature="method#insert#0;class#UserController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/picture/1846441881.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -1075,13 +1124,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pages/insert.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="47" column="58" lean-forward="true" selection-start-line="47" selection-start-column="58" selection-end-line="47" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/config/WebMvcConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="329">
@@ -1094,17 +1136,178 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="413" column="23" selection-start-line="413" selection-start-column="17" selection-end-line="413" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pages/main/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-540">
+          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pages/main/toTop.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" selection-start-line="8" selection-end-line="10" selection-end-column="4" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pages/main/footer.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pages/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#p#2;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pages/insert.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="70" lean-forward="true" selection-start-line="9" selection-start-column="70" selection-end-line="9" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/SpringBootBlogApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/config/ShiroConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
+        <state relative-caret-position="550">
           <caret line="55" column="45" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="414" column="46" lean-forward="true" selection-start-line="414" selection-start-column="46" selection-end-line="414" selection-end-column="46" />
+        <state relative-caret-position="650">
+          <caret line="69" column="48" selection-start-line="42" selection-start-column="7" selection-end-line="69" selection-end-column="48" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V1__create_tb_user_table.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="5" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V4__add_tb_user_table.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="70" selection-start-line="1" selection-start-column="70" selection-end-line="1" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/model/LoginUserBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/zgx/blog/springbootblog/SpringBootBlogApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/model/UserBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1162#1163#0" expanded="true" />
+            <element signature="e#1204#1205#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="78" column="35" selection-start-line="78" selection-start-column="27" selection-end-line="78" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#login#1;class#UserController#0" />
+            <element signature="method#insert#0;class#UserController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/dao/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/zgx/blog/springbootblog/service/UserServiceTestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="46" column="43" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/hibernate/validator/hibernate-validator/6.0.17.Final/hibernate-validator-6.0.17.Final.jar!/org/hibernate/validator/internal/engine/constraintvalidation/ConstraintTree.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="113" selection-start-line="113" selection-end-line="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/validate/impl/UserNameValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

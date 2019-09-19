@@ -1,6 +1,9 @@
 package com.zgx.blog.validate.impl;
 
+import com.zgx.blog.model.UserBean;
+import com.zgx.blog.service.UserService;
 import com.zgx.blog.validate.UserNameValidater;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
@@ -12,8 +15,14 @@ import javax.validation.ConstraintValidatorContext;
  */
 public class UserNameValidator implements ConstraintValidator<UserNameValidater, String> {
 
+
+    @Autowired
+    private UserService userService;
+
+
     /**
      * 初始化的方法
+     *
      * @param constraintAnnotation 我们自定义的注解
      */
     @Override
@@ -23,16 +32,14 @@ public class UserNameValidator implements ConstraintValidator<UserNameValidater,
 
     /**
      * 判断的具体逻辑
-     * @param email 注解所作用的对象
+     *
+     * @param userName                   注解所作用的对象
      * @param constraintValidatorContext 上下文
      * @return
      */
     @Override
-    public boolean isValid(String email, ConstraintValidatorContext constraintValidatorContext) {
-        System.out.println(email);
-        if (email.equals("123")){
-            return false;
-        }
-        return true;
+    public boolean isValid(String userName, ConstraintValidatorContext constraintValidatorContext) {
+        UserBean userBean = userService.findUserBeanByUserName(userName);
+        return null != userBean ? false : true;
     }
 }

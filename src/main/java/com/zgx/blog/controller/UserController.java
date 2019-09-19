@@ -2,10 +2,12 @@ package com.zgx.blog.controller;
 
 import com.zgx.blog.model.LoginUserBean;
 import com.zgx.blog.model.UserBean;
+import com.zgx.blog.service.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.apache.shiro.crypto.hash.SimpleHash;
 import org.apache.shiro.util.ByteSource;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -22,6 +24,10 @@ import javax.validation.Valid;
 @Controller
 @Api(value = "用户控制器")
 public class UserController {
+
+
+    @Autowired
+    private UserService userService;
 
 
     @GetMapping("login")
@@ -70,7 +76,7 @@ public class UserController {
         userBean.setPwd(encryptionPassword(userBean.getPwd(), userBean.getUserName()));
         //设置默认头像
         userBean.setImg("picture/box.png");
-        System.out.println(userBean);
+        userService.insert(userBean);
         //跳转登录页面
         return "redirect:/login";
     }
