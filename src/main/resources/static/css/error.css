@@ -1,0 +1,43 @@
+/** 404 页面样式
+*/
+.yq-main {
+    width: 1180px;
+    min-height: auto;
+    margin: 0 auto;
+}
+
+.yq-main .error-img {
+    margin: 50px auto 10px;
+}
+
+.yq-main .back-area {
+    margin: 0 auto;
+    display: block;
+    width: 80px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    background: #36f;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.yq-main .error-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.texts {
+    width: 368px;
+    margin: 0 auto;
+    color: #505050;
+    display: block;
+    clear: both;
+    padding: 10px 0;
+}
+
+.texts {
+    line-height: 2;
+}

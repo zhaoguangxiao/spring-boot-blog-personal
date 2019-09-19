@@ -22,9 +22,6 @@ public class IndexController {
     }
 
 
-
-
-
     @GetMapping("category")
     public String category() {
         return "pages/category/list";
