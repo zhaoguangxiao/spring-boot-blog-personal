@@ -2,8 +2,11 @@ package com.zgx.blog.config;
 
 import at.pollux.thymeleaf.shiro.dialect.ShiroDialect;
 import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
+import org.apache.shiro.codec.Base64;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
+import org.apache.shiro.web.mgt.CookieRememberMeManager;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
+import org.apache.shiro.web.servlet.SimpleCookie;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -47,6 +50,8 @@ public class ShiroConfig {
         hashMap.put("/insert", "anon");
         //放行注册用户请求
         hashMap.put("/addUserBean", "anon");
+        //放心登录请求
+        hashMap.put("/login", "anon");
         //swagger2
         hashMap.put("/swagger-ui.html", "anon");
         hashMap.put("/swagger-resources/**", "anon");
@@ -76,14 +81,15 @@ public class ShiroConfig {
     /**
      * 创建DefaultWebSecurityManage
      *
-     * @param userRealm
+     * @param shiroRealm
      * @return
      */
     @Bean(name = "defaultWebSecurityManager")
-    public DefaultWebSecurityManager getDefaultWebSecurityManager(@Qualifier("userRealm") UserRealm userRealm) {
+    public DefaultWebSecurityManager getDefaultWebSecurityManager(@Qualifier("userRealm") ShiroRealm shiroRealm) {
         DefaultWebSecurityManager webSecurityManager = new DefaultWebSecurityManager();
         //关联realm
-        webSecurityManager.setRealm(userRealm);
+        webSecurityManager.setRealm(shiroRealm);
+        webSecurityManager.setRememberMeManager(rememberMeManager());
         return webSecurityManager;
     }
 
@@ -94,8 +100,8 @@ public class ShiroConfig {
      * @return
      */
     @Bean(name = "userRealm")
-    public UserRealm getUserRealm(@Qualifier("hashedCredentialsMatcher") HashedCredentialsMatcher hashedCredentialsMatcher) {
-        UserRealm userRealm = new UserRealm();
+    public ShiroRealm getUserRealm(@Qualifier("hashedCredentialsMatcher") HashedCredentialsMatcher hashedCredentialsMatcher) {
+        ShiroRealm userRealm = new ShiroRealm();
         //设置密码加密
         userRealm.setCredentialsMatcher(hashedCredentialsMatcher);
         return userRealm;
@@ -126,4 +132,34 @@ public class ShiroConfig {
     }
 
 
+    /**
+     * cookie管理
+     *
+     * @return
+     */
+    @Bean
+    public SimpleCookie rememberMeCookie() {
+        //这个参数是cookie的名称，对应前端的checkbox的name = rememberMe
+        SimpleCookie simpleCookie = new SimpleCookie("rememberMe");
+        //如果httyOnly设置为true，则客户端不会暴露给客户端脚本代码，使用HttpOnly cookie有助于减少某些类型的跨站点脚本攻击；
+        simpleCookie.setHttpOnly(true);
+        //记住我cookie生效时间,单位是秒
+        simpleCookie.setMaxAge(600);
+        return simpleCookie;
+    }
+
+    /**
+     * 记住我
+     *
+     * @return
+     */
+    @Bean
+    public CookieRememberMeManager rememberMeManager() {
+        CookieRememberMeManager cookieRememberMeManager = new CookieRememberMeManager();
+        cookieRememberMeManager.setCookie(rememberMeCookie());
+        //这个地方有点坑，不是所有的base64编码都可以用，长度过大过小都不行，没搞明白，官网给出的要么0x开头十六进制，要么base64
+        cookieRememberMeManager.setCipherKey(Base64.decode("4AvVhmFLUs0KTA3Kprsdag=="));
+        return cookieRememberMeManager;
+
+    }
 }

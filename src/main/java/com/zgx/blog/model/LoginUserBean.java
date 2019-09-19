@@ -25,5 +25,8 @@ public class LoginUserBean extends BaseBean {
     @ApiModelProperty(required = true, value = "密码", notes = "密码")
     private String pwd;
 
+    @ApiModelProperty(value = "实现记住我功能")
+    private boolean rememberMe;
+
 
 }

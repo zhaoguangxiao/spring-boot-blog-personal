@@ -31,8 +31,8 @@ public class UserServiceImpl implements UserService {
     }
 
 
+    //    @Cacheable(key = "#userName", unless = "#result == null || #userName == null ")
     @Override
-    @Cacheable(key = "#userName", unless = "#result == null")
     public UserBean findUserBeanByUserName(String userName) {
         return userMapper.selectUserBeanByUserName(userName);
     }

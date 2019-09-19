@@ -5,7 +5,12 @@ import com.zgx.blog.model.UserBean;
 import com.zgx.blog.service.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authc.IncorrectCredentialsException;
+import org.apache.shiro.authc.UnknownAccountException;
+import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.crypto.hash.SimpleHash;
+import org.apache.shiro.subject.Subject;
 import org.apache.shiro.util.ByteSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -13,6 +18,7 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.validation.Valid;
 
@@ -41,15 +47,30 @@ public class UserController {
     @PostMapping("login")
     @ApiOperation(value = "登录方法", notes = "登录流程控制")
     public String login(@Valid LoginUserBean loginUserBean,
-                        BindingResult bindingResult) {
-
+                        BindingResult bindingResult,
+                        Model model) {
         if (bindingResult.hasErrors()) {
             //如果有错误,就跳转form表单
             return "pages/login";
         }
+        try {
+            //获取当前用户对象
+            Subject subject = SecurityUtils.getSubject();
+            //生成令牌(传入用户输入的账号和密码)
+            UsernamePasswordToken token = new UsernamePasswordToken(loginUserBean.getUserName(), loginUserBean.getPwd(), loginUserBean.isRememberMe());
+            //认证登录 这里会加载自定义的realm
+            subject.login(token);
+            //跳转首页
+            return "redirect:/";
+        } catch (UnknownAccountException e) {
+            model.addAttribute("error", "用户名不存在");
+        }catch (IncorrectCredentialsException e){
+            model.addAttribute("error", "密码不正确");
+        }catch (Exception e){
+            model.addAttribute("error", "出现了意料之外的错误");
+        }
+        return "pages/login";
 
-        System.out.println(loginUserBean);
-        return null;
     }
 
 
