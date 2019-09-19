@@ -18,6 +18,8 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.validation.Valid;
@@ -64,9 +66,9 @@ public class UserController {
             return "redirect:/";
         } catch (UnknownAccountException e) {
             model.addAttribute("error", "用户名不存在");
-        }catch (IncorrectCredentialsException e){
+        } catch (IncorrectCredentialsException e) {
             model.addAttribute("error", "密码不正确");
-        }catch (Exception e){
+        } catch (Exception e) {
             model.addAttribute("error", "出现了意料之外的错误");
         }
         return "pages/login";
@@ -96,12 +98,20 @@ public class UserController {
         //对密码进行加密
         userBean.setPwd(encryptionPassword(userBean.getPwd(), userBean.getUserName()));
         //设置默认头像
-        userBean.setImg("picture/box.png");
+        userBean.setImg("/static/picture/box.png");
         userService.insert(userBean);
         //跳转登录页面
         return "redirect:/login";
     }
 
+
+    @GetMapping(value = "logout")
+    @ApiOperation(value = "注销用户方法", notes = "注销控制流程")
+    public String logout() {
+        Subject subject = SecurityUtils.getSubject();
+        subject.logout();
+        return "redirect:/";
+    }
 
     /**
      * 返回加密后的密码

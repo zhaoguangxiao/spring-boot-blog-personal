@@ -7,6 +7,7 @@ import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
+import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.apache.shiro.subject.Subject;
 import org.apache.shiro.util.ByteSource;
@@ -75,10 +76,16 @@ public class ShiroRealm extends AuthorizingRealm {
 
         //2,判断密码
         //保存用户信息 保存用户字段 userBean
-        return new SimpleAuthenticationInfo(userBean,
+        SimpleAuthenticationInfo info = new SimpleAuthenticationInfo(userBean,
                 userBean.getPwd(),
                 salt,
                 this.getName()
         );
+        //当前用户保存在session中
+        // 当验证都通过后，把用户信息放在session里
+        Session session = SecurityUtils.getSubject().getSession();
+        session.setAttribute("userBean", userBean);
+
+        return info;
     }
 }

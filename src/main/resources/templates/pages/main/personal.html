@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -13,16 +13,19 @@
                 <a href="#">17交流网</a>
                 <span>：中文英文Destoon7.0模板,各种商业网站源码，网站模板分享基地！</span>
             </li>
-            <li role="presentation" class="disabled">
+            <li role="presentation" class="disabled" th:if="${session.userBean == null}">
                 <a th:href="@{/login}">我要登录</a>
                 <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
                 <a th:href="@{/insert}">我要注册</a>
             </li>
-<!--            <li role="presentation" class="disabled">-->
-<!--                <a href="#">欢迎,zgx</a>-->
-<!--                <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>-->
-<!--                <a href="#">注销</a>-->
-<!--            </li>-->
+
+            <li role="presentation" class="disabled" th:if="${session.userBean != null}">
+                <a href="#">欢迎,
+                    <img th:src="${session.userBean.img}" height="18px" width="18px" th:alt="${session.userBean.userName}+'默认头像'">
+                    [[${session.userBean.userName}]]</a>
+                <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                <a th:href="@{/logout}">注销</a>
+            </li>
         </ul>
     </div>
 </div>
