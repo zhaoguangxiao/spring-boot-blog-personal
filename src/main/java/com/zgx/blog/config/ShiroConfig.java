@@ -44,14 +44,15 @@ public class ShiroConfig {
 
         //让某些资源不拦截
         hashMap.put("/", "anon");
-        //放行登录请求
-        hashMap.put("/save", "anon");
         //放行注册请求
         hashMap.put("/insert", "anon");
         //放行注册用户请求
         hashMap.put("/addUserBean", "anon");
         //放心登录请求
         hashMap.put("/login", "anon");
+        //放行github请求
+        hashMap.put("/github", "anon");
+        hashMap.put("/callback", "anon");
         //swagger2
         hashMap.put("/swagger-ui.html", "anon");
         hashMap.put("/swagger-resources/**", "anon");

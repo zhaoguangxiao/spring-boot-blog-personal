@@ -11,7 +11,7 @@ import lombok.Data;
  */
 @Data
 @ApiModel(value = "github实体类")
-public class GiHubBean {
+public class OpenUser {
 
     /**
      * github 标识
@@ -34,7 +34,11 @@ public class GiHubBean {
     @ApiModelProperty(value = "用户头像路径")
     private String avatar;
     @ApiModelProperty(value = "登录唯一标识")
-    private String openId;
+    private Long openId;
+    @ApiModelProperty(value = "创建时间", required = false)
+    private Long createTime;
+    @ApiModelProperty(value = "更新日期", required = false)
+    private Long updateTime;
 
 
 }

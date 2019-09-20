@@ -85,7 +85,6 @@ public class ShiroRealm extends AuthorizingRealm {
         // 当验证都通过后，把用户信息放在session里
         Session session = SecurityUtils.getSubject().getSession();
         session.setAttribute("userBean", userBean);
-
         return info;
     }
 }
