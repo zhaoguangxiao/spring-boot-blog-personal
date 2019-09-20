@@ -2,6 +2,7 @@ package com.zgx.blog.config;
 
 import at.pollux.thymeleaf.shiro.dialect.ShiroDialect;
 import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
+import org.apache.shiro.cache.ehcache.EhCacheManager;
 import org.apache.shiro.codec.Base64;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.web.mgt.CookieRememberMeManager;
@@ -91,6 +92,8 @@ public class ShiroConfig {
         //关联realm
         webSecurityManager.setRealm(shiroRealm);
         webSecurityManager.setRememberMeManager(rememberMeManager());
+        // 注入缓存管理器;
+        webSecurityManager.setCacheManager(ehCacheManager());
         return webSecurityManager;
     }
 
@@ -163,4 +166,19 @@ public class ShiroConfig {
         return cookieRememberMeManager;
 
     }
+
+
+
+    /**
+     * shiro缓存管理器;
+     * 需要注入对应的其它的实体类中-->安全管理器：securityManager可见securityManager是整个shiro的核心；
+     */
+    @Bean
+    public EhCacheManager ehCacheManager() {
+        EhCacheManager cacheManager = new EhCacheManager();
+        cacheManager.setCacheManagerConfigFile("classpath:ehcache.xml");
+        return cacheManager;
+    }
+
+
 }

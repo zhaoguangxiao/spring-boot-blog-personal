@@ -2,25 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9543a06-b8ba-45f1-9ee3-501ae5f96aa9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_58.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_14_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_1_17_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zgx/blog/config/CaptchaUsernamePasswordToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zgx/blog/utils/HttpsUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V7__add_openuser_table_time.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ehcache.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-blog-personal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-blog-personal.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zgx/blog/config/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zgx/blog/config/ShiroConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zgx/blog/config/ShiroRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zgx/blog/config/ShiroRealm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zgx/blog/controller/GitHubController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zgx/blog/controller/GitHubController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zgx/blog/dao/OpenUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zgx/blog/dao/OpenUserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zgx/blog/model/GiHubBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zgx/blog/model/OpenUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zgx/blog/service/OpenUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zgx/blog/service/OpenUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zgx/blog/service/impl/OpenUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zgx/blog/service/impl/OpenUserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/insert.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/insert.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/login.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -59,53 +43,18 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/controller/GitHubController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/config/ShiroConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="90" selection-start-line="90" selection-end-line="90" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#requestGitHub#0;class#GitHubController#0" />
-                <element signature="method#getToken#0;class#GitHubController#0" />
-                <element signature="method#getGitHubUser#0;class#GitHubController#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/config/CaptchaUsernamePasswordToken.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/service/impl/OpenUserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#681#682#0" expanded="true" />
-                <element signature="e#741#742#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="442">
+              <caret line="176" column="26" selection-start-line="176" selection-start-column="26" selection-end-line="176" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/config/ShiroRealm.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/ehcache.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="62" selection-start-line="62" selection-end-line="62" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#doGetAuthorizationInfo#0;class#ShiroRealm#0" />
-              </folding>
-            </state>
+            <state relative-caret-position="-1668" />
           </provider>
         </entry>
       </file>
@@ -157,7 +106,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/validate/IsEmailValidater.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/validate/IsVarificationCodeValidater.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/validate/impl/IsVarficationCodeValidator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/validate/impl/IsVarificationCodeValidator.java" />
@@ -195,7 +143,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/controller/GithubController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/pages/insert.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/pages/login.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/config/ShiroConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/utils/HttpsUtils.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -208,6 +155,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/config/CaptchaUsernamePasswordToken.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/controller/GitHubController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/config/ShiroRealm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zgx/blog/config/ShiroConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/ehcache.xml" />
       </list>
     </option>
   </component>
@@ -235,10 +184,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="486" />
-    <option name="y" value="229" />
-    <option name="width" value="1436" />
-    <option name="height" value="929" />
+    <option name="x" value="320" />
+    <option name="y" value="198" />
+    <option name="width" value="1400" />
+    <option name="height" value="871" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -247,6 +196,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -317,118 +267,10 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="spring-boot-blog-personal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-blog-personal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-blog-personal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-blog-personal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="migration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-blog-personal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-blog-personal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-blog-personal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-blog-personal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-blog-personal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-blog-personal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-blog-personal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-blog-personal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-blog-personal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-blog-personal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-blog-personal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-blog-personal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-blog-personal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-blog-personal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="zgx" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-blog-personal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-blog-personal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="zgx" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-blog-personal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-blog-personal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="zgx" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="springbootblog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-blog-personal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-blog-personal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="zgx" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="springbootblog" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -440,7 +282,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -449,11 +291,15 @@
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\spring-workspace\spring-boot-blog-personal\src\main\resources\static\picture" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.zgx.blog" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\spring-workspace\spring-boot-blog-personal\src\main\resources" />
+      <recent name="E:\spring-workspace\spring-boot-blog-personal\src\main\resources\static\picture" />
+      <recent name="E:\spring-workspace\spring-boot-blog-personal\src\main\resources\templates" />
+      <recent name="E:\spring-workspace\spring-boot-blog-personal\src\main\resources\static\css" />
+      <recent name="E:\spring-workspace\spring-boot-blog-personal\src\main\resources\static\js" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.zgx.blog.utils" />
@@ -461,12 +307,8 @@
       <recent name="com.zgx.blog.validate" />
       <recent name="com.zgx.blog.config" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\spring-workspace\spring-boot-blog-personal\src\main\resources\static\picture" />
-      <recent name="E:\spring-workspace\spring-boot-blog-personal\src\main\resources\templates" />
-      <recent name="E:\spring-workspace\spring-boot-blog-personal\src\main\resources\static\css" />
-      <recent name="E:\spring-workspace\spring-boot-blog-personal\src\main\resources\static\js" />
-      <recent name="E:\spring-workspace\spring-boot-blog-personal\src\main\resources\static\test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -606,7 +448,9 @@
       <workItem from="1568885963168" duration="1655000" />
       <workItem from="1568890831430" duration="14471000" />
       <workItem from="1568951737013" duration="4903000" />
-      <workItem from="1568960106050" duration="3740000" />
+      <workItem from="1568960106050" duration="3940000" />
+      <workItem from="1568969479984" duration="20000" />
+      <workItem from="1568977595380" duration="1591000" />
     </task>
     <task id="LOCAL-00001" summary="静态页面主页与文章分类">
       <created>1567845915538</created>
@@ -734,7 +578,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568884533926</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="github 登录">
+      <created>1568963984970</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1568963984970</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -761,13 +612,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134509000" />
+    <option name="totallyTimeSpent" value="136320000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26984978" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30203864" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -778,7 +629,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.13429523" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32297447" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3063263" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.24195339" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -789,7 +640,7 @@
       <window_info anchor="bottom" id="Messages" order="11" weight="0.42286348" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32963374" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" weight="0.22086571" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.1553829" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -899,7 +750,8 @@
     <MESSAGE value="登录头部优化" />
     <MESSAGE value="404 500 页面优化" />
     <MESSAGE value="增加第三方登录实体类" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加第三方登录实体类" />
+    <MESSAGE value="github 登录" />
+    <option name="LAST_COMMIT_MESSAGE" value="github 登录" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -909,12 +761,6 @@
           <line>87</line>
           <properties />
           <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zgx/blog/config/ShiroRealm.java</url>
-          <line>62</line>
-          <properties />
-          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -969,20 +815,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V4__add_tb_user_table.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="70" selection-start-line="1" selection-start-column="70" selection-end-line="1" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/zgx/blog/springbootblog/SpringBootBlogApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.m2/repository/org/hibernate/validator/hibernate-validator/6.0.17.Final/hibernate-validator-6.0.17.Final.jar!/org/hibernate/validator/internal/engine/constraintvalidation/ConstraintTree.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
@@ -1216,13 +1048,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/config/ShiroConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="54" column="41" lean-forward="true" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="653">
@@ -1362,13 +1187,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/config/ShiroRealm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
+        <state relative-caret-position="109">
+          <caret line="60" column="13" lean-forward="true" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#doGetAuthorizationInfo#0;class#ShiroRealm#0" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0.jar!/org/apache/shiro/mgt/CachingSecurityManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zgx/blog/config/ShiroConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="176" column="26" selection-start-line="176" selection-start-column="26" selection-end-line="176" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ehcache.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1668" />
       </provider>
     </entry>
   </component>
